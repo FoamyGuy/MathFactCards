@@ -17,7 +17,6 @@ This project also demonstrates in a basic way
 how to use 9-patch drawable resources in your
 projects.
 
-Screenshot:
 ![MathFactCards](https://dl.dropbox.com/u/5724095/images/MathFactCardss1.png)
 
 Video Walkthrough:
