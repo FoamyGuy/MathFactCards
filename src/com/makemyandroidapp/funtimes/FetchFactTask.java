@@ -31,7 +31,6 @@ public class FetchFactTask extends AsyncTask<String, Void, String>{
 	}
 	
 	
-	
 	@Override
     protected String doInBackground(String... uri) {
         HttpClient httpclient = new DefaultHttpClient();

@@ -19,16 +19,6 @@
         android:text="Loading..."
         android:textColor="#000080"
         
-        />
-    
-<!--     <ImageView 
-        android:id="@+id/funImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/amethyst"
-
-        android:layout_centerInParent="true"
-        />
-     -->
+        />    
 
 </RelativeLayout>

@@ -30,11 +30,7 @@ public class FunPagerAdapter extends PagerAdapter{
 							Color.parseColor("#B61C83"),
 							Color.parseColor("#0070C0")};
 	
-	private int[] cardIds = {R.drawable.green_back,
-							 R.drawable.yellow_back,
-							 R.drawable.red_back,
-							 R.drawable.purple_back,
-							 R.drawable.blue_back};
+
 	private Random rnd;
 	
 	public FunPagerAdapter(){
@@ -66,13 +62,11 @@ public class FunPagerAdapter extends PagerAdapter{
 		int randomColor = rnd.nextInt(5);
 		
 		TextView tv = (TextView)page.findViewById(R.id.lblTxt);
-		tv.setBackgroundResource(cardIds[randomColor]);
+		tv.setBackgroundResource(R.drawable.generic_back);
 		back.setBackgroundColor(colors[randomColor]);
+		
 		FetchFactTask fft = new FetchFactTask(tv);
 		fft.execute("http://numbersapi.com/" + pos);
-		
-		//tv.setText(""+pos);
-		
 		
 		((ViewPager) collection).addView(page, 0);
 		return page;
